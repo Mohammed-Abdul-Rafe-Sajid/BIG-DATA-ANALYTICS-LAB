@@ -1,0 +1,9 @@
+order_id,region,product,quantity,price
+1,South,Laptop,2,55000
+2,North,Mobile,5,15000
+3,South,Laptop,1,55000
+4,West,Tablet,3,20000
+5,South,Mobile,2,15000
+6,East,Laptop,1,55000
+7,North,Tablet,4,20000
+8,West,Laptop,2,55000
