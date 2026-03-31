@@ -1,0 +1,10 @@
+
+touch word.txt
+hadoop fs -mkdir -p /wordcount-py
+hadoop fs -copyFromLocal word.txt /wordcount-py
+
+hadoop jar /home/hduser/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input /wordcount-py/word.txt -output /wordcount-py/output
+
+
+
+hadoop fs -cat /wordcount/output/part-00000
